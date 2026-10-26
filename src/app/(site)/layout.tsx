@@ -51,7 +51,12 @@ export default async function SiteLayout({ children }: { children: React.ReactNo
             </p>
           </div>
         </div>
-        <div className="border-t border-cream/20 py-4 text-center text-xs opacity-80">© {new Date().getFullYear()} Newz Mídia</div>
+        <div className="border-t border-cream/20 py-4 text-center text-xs opacity-80">
+          © {new Date().getFullYear()} Newz Mídia ·{" "}
+          <Link href="/admin/login" rel="nofollow" className="font-bold underline">
+            ADM
+          </Link>
+        </div>
       </footer>
     </div>
   );
