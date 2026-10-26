@@ -30,10 +30,10 @@ export default async function Home() {
                 <Link href="/contato" className="btn btn-orange">Pedir um diagnóstico</Link>
                 <Link href="/servicos" className="btn btn-ghost border-cream text-cream hover:bg-navy-deep">O que fazemos</Link>
               </div>
-            </div>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/img/mascote.png" alt="Mascote da Newz: jornaleiro erguendo um jornal" className="mx-auto w-64 flex-[1_1_220px] sm:w-80" />
-          </div>
+            <div className="mx-auto w-64 flex-[1_1_220px] rounded-lg border-b-8 border-orange-dark bg-cream p-6 sm:w-80">
+  {/* eslint-disable-next-line @next/next/no-img-element */}
+  <img src="/img/mascote.png" alt="Mascote da Newz: jornaleiro erguendo um jornal" className="mx-auto w-full" />
+</div>
         </div>
       </section>
 
