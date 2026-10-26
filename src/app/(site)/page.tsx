@@ -30,10 +30,24 @@ export default async function Home() {
                 <Link href="/contato" className="btn btn-orange">Pedir um diagnóstico</Link>
                 <Link href="/servicos" className="btn btn-ghost border-cream text-cream hover:bg-navy-deep">O que fazemos</Link>
               </div>
-            <div className="mx-auto w-64 flex-[1_1_220px] rounded-lg border-b-8 border-orange-dark bg-cream p-6 sm:w-80">
-  {/* eslint-disable-next-line @next/next/no-img-element */}
-  <img src="/img/mascote.png" alt="Mascote da Newz: jornaleiro erguendo um jornal" className="mx-auto w-full" />
-</div>
+            </div>
+
+            {/*
+              Cartão da marca. O mascote e o logo principal são azul-marinho, então o cartão é CREME:
+              sobre o fundo navy da capa eles sumiriam. Regra: logo escuro só em fundo claro.
+            */}
+            <figure className="mx-auto w-64 flex-[1_1_220px] overflow-hidden rounded-lg shadow-lg sm:w-80">
+              <div className="bg-cream p-6">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src="/img/mascote.png" alt="Mascote da Newz: jornaleiro erguendo um jornal" className="mx-auto w-full" />
+              </div>
+              <figcaption className="flex items-center justify-between gap-3 border-t-8 border-orange-dark bg-cream px-5 py-3 text-navy">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src="/img/logo.png" alt="Newz Mídia" className="h-9 w-auto" />
+                <span className="text-[11px] font-bold uppercase tracking-[0.18em]">Edição Nº 01</span>
+              </figcaption>
+            </figure>
+          </div>
         </div>
       </section>
 
